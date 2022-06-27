@@ -7,7 +7,8 @@ function App() {
         <div className="App">
           <BNavbar />
           <Home />
-          ghgg
+          develop branch are now on this project
+          Trying to push code to develpp branch
         </div>
     );
 }
