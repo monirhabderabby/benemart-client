@@ -2,8 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div>
-            This is home
+        <div className='h-[100vh] w-[100%] bg-light'>
         </div>
     );
 };
