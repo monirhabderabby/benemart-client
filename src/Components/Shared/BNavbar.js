@@ -1,4 +1,4 @@
-import { Button, Navbar } from "flowbite-react";
+import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -17,33 +17,72 @@ const BNavbar = () => {
                     </span>
                 </Navbar.Brand>
                 <div className="flex md:order-2">
-                    <Button>Get started</Button>
+                    <Button>Login</Button>
+                    {/* <Dropdown
+                        arrowIcon={false}
+                        inline={true}
+                        label={
+                            <Avatar
+                                alt="User settings"
+                                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                rounded={true}
+                            />
+                        }
+                    >
+                        <Dropdown.Header>
+                            <span className="block text-sm">Bonnie Green</span>
+                            <span className="block truncate text-sm font-medium">
+                                name@flowbite.com
+                            </span>
+                        </Dropdown.Header>
+                        <Dropdown.Item>Dashboard</Dropdown.Item>
+                        <Dropdown.Item>Settings</Dropdown.Item>
+                        <Dropdown.Item>Earnings</Dropdown.Item>
+                        <Dropdown.Divider />
+                        <Dropdown.Item>Sign out</Dropdown.Item>
+                    </Dropdown> */}
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive ? "text-primary" : "text-black"
+                            isActive ? "text-primary text-lg" : "text-black"
                         }
                     >
                         Home
                     </NavLink>
                     <NavLink
+                        to="/products"
+                        className={({ isActive }) =>
+                            isActive ? "text-primary text-lg" : "text-black text-lg"
+                        }
+                    >
+                        Products
+                    </NavLink>
+                    <NavLink
                         to="/features"
                         className={({ isActive }) =>
-                            isActive ? "text-primary" : "text-black"
+                            isActive ? "text-primary text-lg" : "text-black text-lg"
                         }
                     >
                         Features
                     </NavLink>
                     <NavLink
-                        to="/login"
+                        to="/about"
                         className={({ isActive }) =>
-                            isActive ? "text-primary" : "text-black"
+                            isActive ? "text-primary text-lg" : "text-black text-lg"
                         }
                     >
-                        Login
+                        About
+                    </NavLink>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            isActive ? "text-primary text-lg" : "text-black text-lg"
+                        }
+                    >
+                        Contact
                     </NavLink>
                 </Navbar.Collapse>
             </Navbar>
