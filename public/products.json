@@ -1,0 +1,20 @@
+[
+    {
+        "name": "T-shirt",
+        "price": "10",
+        "img": "https://i.ibb.co/cCSHVtS/t-shirt.jpg",
+        "description": "Its Comfortable and also casual.Its made from 100% cotton ,It wear well on anyone . and also color is well! and it have double-needle hammed sleeves and bottom "
+    },
+    {
+        "name": "sneaker",
+        "price": "200",
+        "img": "https://i.ibb.co/WzZdZK5/shoes.jpg",
+        "description": "Custom brand Sports Shoes for men , its a stylish Fashion Sneaker mens Running Shoes..It is a casual shoes ..and it have Breathable Footwear."
+    },
+    {
+        "name": "Watch",
+        "price": "300",
+        "img": "https://i.ibb.co/CtHNrgD/watch.jpg",
+        "description": "Its a lite weight watch .. and it is full o0f feature like sleep monitoring ,fall detection ,Blood passer monitoring,step counting ,fitness tracking amd more ..."
+    }
+]
