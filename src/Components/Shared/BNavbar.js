@@ -86,8 +86,7 @@ const BNavbar = () => {
                     >
                         Contact
                     </NavLink>
-                    <span>
-                    <FontAwesomeIcon icon={faMagnifyingGlass}  className="mx-auto my-auto w-4 h-full hover:text-custom-blue transition duration-150 ease-out"/>
+                    <span className="h-[100%] my-auto">
                     </span>
                 </Navbar.Collapse>
             </Navbar>

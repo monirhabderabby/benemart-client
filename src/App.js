@@ -10,10 +10,5 @@ function App() {
       </Routes>
     </>
   );
-<<<<<<< HEAD
-  }
-=======
 }
-
->>>>>>> d17e7ba6f471b3659800ca9a76690b743cfef66e
 export default App;

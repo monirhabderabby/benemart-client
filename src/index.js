@@ -1,30 +1,17 @@
 
-<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-=======
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
->>>>>>> d17e7ba6f471b3659800ca9a76690b743cfef66e
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-<<<<<<< HEAD
-    <App />
-=======
       <App />
->>>>>>> d17e7ba6f471b3659800ca9a76690b743cfef66e
     </BrowserRouter>
   </React.StrictMode>
 );
