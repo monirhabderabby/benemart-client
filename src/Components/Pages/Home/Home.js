@@ -1,13 +1,14 @@
-import BNavbar from "../../Shared/BNavbar";
-import Banner from "./Banner";
+import React from 'react';
+import BNavbar from '../../Shared/BNavbar';
+import Banner from './Banner';
 
 const Home = () => {
-  return (
-    <div className="h-[100vh] w-[100%]">
-     <BNavbar />
-      <Banner />
-    </div>
-  );
+    return (
+        <div>
+            <BNavbar />
+            <Banner />
+        </div>
+    );
 };
 
 export default Home;
