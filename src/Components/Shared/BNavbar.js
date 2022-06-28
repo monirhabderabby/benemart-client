@@ -1,6 +1,7 @@
 import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import SearchBar from "./SearchBar/SearchBar";
 
 const BNavbar = () => {
     return (
@@ -17,7 +18,7 @@ const BNavbar = () => {
                     </span>
                 </Navbar.Brand>
                 <div className="flex md:order-2">
-                    <Button>Login</Button>
+                    <Button className="bg-custom-blue">Login</Button>
                     {/* <Dropdown
                         arrowIcon={false}
                         inline={true}
@@ -47,7 +48,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive ? "text-primary text-lg" : "text-black"
+                            isActive ? " text-md text-custom-blue my-auto" : "text-black my-auto hover:text-custom-blue"
                         }
                     >
                         Home
@@ -55,7 +56,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/products"
                         className={({ isActive }) =>
-                            isActive ? "text-primary text-lg" : "text-black text-lg"
+                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue"
                         }
                     >
                         Products
@@ -63,7 +64,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/features"
                         className={({ isActive }) =>
-                            isActive ? "text-primary text-lg" : "text-black text-lg"
+                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue"
                         }
                     >
                         Features
@@ -71,7 +72,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/about"
                         className={({ isActive }) =>
-                            isActive ? "text-primary text-lg" : "text-black text-lg"
+                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue"
                         }
                     >
                         About
@@ -79,11 +80,14 @@ const BNavbar = () => {
                     <NavLink
                         to="/contact"
                         className={({ isActive }) =>
-                            isActive ? "text-primary text-lg" : "text-black text-lg"
+                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue hover:text-custom-blue"
                         }
                     >
                         Contact
                     </NavLink>
+                    <div className="h-full my-auto mx-auto">
+                        <SearchBar />
+                    </div>
                 </Navbar.Collapse>
             </Navbar>
         </div>
