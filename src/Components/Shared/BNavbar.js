@@ -1,7 +1,9 @@
 import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar/SearchBar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
 const BNavbar = () => {
     return (
@@ -18,7 +20,7 @@ const BNavbar = () => {
                     </span>
                 </Navbar.Brand>
                 <div className="flex md:order-2">
-                    <Button className="bg-custom-blue">Login</Button>
+                    <Link to="/login" className="bg-primary px-2 py-1 rounded-md text-white"><FontAwesomeIcon icon={faRightToBracket} className="w-3"/> Login</Link>
                     {/* <Dropdown
                         arrowIcon={false}
                         inline={true}
