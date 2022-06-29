@@ -4,20 +4,14 @@ import { Link, NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar/SearchBar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import Logo from "./Logo/Logo";
 
 const BNavbar = () => {
     return (
         <div>
             <Navbar fluid={true} rounded={true} className="bg-secondary">
                 <Navbar.Brand href="https://flowbite.com/">
-                    <img
-                        src="https://flowbite.com/docs/images/logo.svg"
-                        className="mr-3 h-6 sm:h-9"
-                        alt="Flowbite Logo"
-                    />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                        Flowbite
-                    </span>
+                    <Logo />
                 </Navbar.Brand>
                 <div className="flex md:order-2">
                     <Link to="/login" className="bg-primary px-2 py-1 rounded-md text-white"><FontAwesomeIcon icon={faRightToBracket} className="w-3"/> Login</Link>
