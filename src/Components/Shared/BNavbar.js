@@ -1,22 +1,21 @@
-import { Avatar, Dropdown, Navbar } from 'flowbite-react';
-import React from 'react';
+import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import SearchBar from "./SearchBar/SearchBar";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import Logo from "./Logo/Logo";
 
 const BNavbar = () => {
     return (
-        <div>
-            <Navbar fluid={true} rounded={true} className="bg-transparent">
+        <div className="max-w-[1920px] mx-auto">
+            <Navbar fluid={true} rounded={true} className="bg-[#FEEFE2] px-6 md:px-12">
                 <Navbar.Brand href="https://flowbite.com/">
-                    <img
-                        src="https://flowbite.com/docs/images/logo.svg"
-                        className="mr-3 h-6 sm:h-9"
-                        alt="Flowbite Logo"
-                    />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold">
-                        Flowbite
-                    </span>
+                    <Logo />
                 </Navbar.Brand>
-                <div className="flex md:order-2">
-                    <Dropdown
+                <div className="flex md:order-2 items-center">
+                    <Link to="/login" className="bg-primary px-2 py-1 text-sm rounded-md text-center text-white"><FontAwesomeIcon icon={faRightToBracket} className="w-3"/> Login</Link>
+                    {/* <Dropdown
                         arrowIcon={false}
                         inline={true}
                         label={
@@ -38,18 +37,53 @@ const BNavbar = () => {
                         <Dropdown.Item>Earnings</Dropdown.Item>
                         <Dropdown.Divider />
                         <Dropdown.Item>Sign out</Dropdown.Item>
-                    </Dropdown>
+                    </Dropdown> */}
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
-                    <Navbar.Link href="/navbars" active={true}>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive ? " text-md text-primary my-auto font-normal" : "text-black my-auto hover:text-primary font-normal"
+                        }
+                    >
                         Home
-                    </Navbar.Link>
-                    <Navbar.Link href="/navbars" className="text-white">About</Navbar.Link>
-                    <Navbar.Link href="/navbars">Services</Navbar.Link>
-                    <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-                    <Navbar.Link href="/navbars">Contact</Navbar.Link>
-                    <Navbar.Link href="/navbars">Login</Navbar.Link>
+                    </NavLink>
+                    <NavLink
+                        to="/products"
+                        className={({ isActive }) =>
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
+                        }
+                    >
+                        Products
+                    </NavLink>
+                    <NavLink
+                        to="/features"
+                        className={({ isActive }) =>
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
+                        }
+                    >
+                        Features
+                    </NavLink>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
+                        }
+                    >
+                        About
+                    </NavLink>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
+                        }
+                    >
+                        Contact
+                    </NavLink>
+                    <div className="h-full my-auto mx-auto">
+                        <SearchBar />
+                    </div>
                 </Navbar.Collapse>
             </Navbar>
         </div>

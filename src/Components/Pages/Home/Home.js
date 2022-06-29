@@ -1,8 +1,17 @@
 import React from 'react';
+import BNavbar from '../../Shared/BNavbar';
+import Footer from '../../Shared/Footer/Footer';
+import Banner from './Banner';
+import FlashDeals from './FlashDeals';
 
 const Home = () => {
     return (
-        <div className='h-[100vh] w-[100%] bg-light'>
+        <div className='bg-secondary'>
+            <BNavbar />
+            <Banner />
+            <FlashDeals />
+            <Footer />
+
         </div>
     );
 };

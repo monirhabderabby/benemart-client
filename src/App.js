@@ -1,13 +1,14 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import BNavbar from "./Components/Shared/BNavbar";
+import Home from "./Components/Pages/Home/Home";
 
 function App() {
     return (
         <div>
-            <BNavbar></BNavbar>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
         </div>
-
     );
 }
-
 export default App;
