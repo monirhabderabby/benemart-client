@@ -8,7 +8,7 @@ import { faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 const BNavbar = () => {
     return (
         <div>
-            <Navbar fluid={true} rounded={true}>
+            <Navbar fluid={true} rounded={true} className="bg-secondary">
                 <Navbar.Brand href="https://flowbite.com/">
                     <img
                         src="https://flowbite.com/docs/images/logo.svg"
@@ -50,7 +50,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive ? " text-md text-custom-blue my-auto" : "text-black my-auto hover:text-custom-blue"
+                            isActive ? " text-md text-primary my-auto font-normal" : "text-black my-auto hover:text-primary font-normal"
                         }
                     >
                         Home
@@ -58,7 +58,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/products"
                         className={({ isActive }) =>
-                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue"
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
                         }
                     >
                         Products
@@ -66,7 +66,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/features"
                         className={({ isActive }) =>
-                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue"
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
                         }
                     >
                         Features
@@ -74,7 +74,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/about"
                         className={({ isActive }) =>
-                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue"
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
                         }
                     >
                         About
@@ -82,7 +82,7 @@ const BNavbar = () => {
                     <NavLink
                         to="/contact"
                         className={({ isActive }) =>
-                            isActive ? "text-custom-blue text-md my-auto" : "text-black text-md my-auto hover:text-custom-blue hover:text-custom-blue"
+                            isActive ? "text-primary text-md my-auto font-normal" : "text-black text-md my-auto hover:text-primary font-normal"
                         }
                     >
                         Contact
