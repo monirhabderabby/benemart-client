@@ -1,10 +1,12 @@
 import "./App.css";
+import BNavbar from "./Components/Shared/BNavbar";
 
 function App() {
     return (
-        <div className="App">
-        <h1 className="text-5xl text-green-500">Monir Hossain Rabby</h1>
+        <div>
+            <BNavbar></BNavbar>
         </div>
+
     );
 }
 
