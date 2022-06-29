@@ -8,13 +8,13 @@ import Logo from "./Logo/Logo";
 
 const BNavbar = () => {
     return (
-        <div>
-            <Navbar fluid={true} rounded={true} className="bg-secondary">
+        <div className="max-w-[1920px] mx-auto">
+            <Navbar fluid={true} rounded={true} className="bg-[#FEEFE2] px-6 md:px-12">
                 <Navbar.Brand href="https://flowbite.com/">
                     <Logo />
                 </Navbar.Brand>
-                <div className="flex md:order-2">
-                    <Link to="/login" className="bg-primary px-2 py-1 rounded-md text-white"><FontAwesomeIcon icon={faRightToBracket} className="w-3"/> Login</Link>
+                <div className="flex md:order-2 items-center">
+                    <Link to="/login" className="bg-primary px-2 py-1 text-sm rounded-md text-center text-white"><FontAwesomeIcon icon={faRightToBracket} className="w-3"/> Login</Link>
                     {/* <Dropdown
                         arrowIcon={false}
                         inline={true}

@@ -8,7 +8,8 @@ import Banner1 from "../../../Assets/Banner-Img/banner1.png";
 import { Autoplay, Pagination } from "swiper";
 const Banner = () => {
   return (
-    <Swiper
+    <div className="max-w-[1920px] mx-auto">
+      <Swiper
       spaceBetween={0}
       pagination={{
         clickable: true,
@@ -38,6 +39,7 @@ const Banner = () => {
         </div>
       </SwiperSlide>
     </Swiper>
+    </div>
   );
 };
 
