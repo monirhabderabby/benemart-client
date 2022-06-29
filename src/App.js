@@ -4,11 +4,11 @@ import Home from "./Components/Pages/Home/Home";
 
 function App() {
   return (
-    <>
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </>
+    </div>
   );
 }
 export default App;

@@ -8,8 +8,8 @@ import Logo from "./Logo/Logo";
 
 const BNavbar = () => {
     return (
-        <div>
-            <Navbar fluid={true} rounded={true} className="bg-[#FEEFE2]">
+        <div className="max-w-[1920px] mx-auto">
+            <Navbar fluid={true} rounded={true} className="bg-[#FEEFE2] px-6 md:px-12">
                 <Navbar.Brand href="https://flowbite.com/">
                     <Logo />
                 </Navbar.Brand>
